@@ -7,7 +7,7 @@
             @include('inc.message')
            <div>
                @if(auth()->user()->email == "admin@gmail.com")
-                    <a href="{{ route('task.create') }}" class="btn btn-info mb-2">Create a task</a>
+                    <a href="{{ route('task.create') }}" class="btn btn-info mb-2"><b>Add a new Task</b></a>
                @endif
            </div>
             <div class="card">
