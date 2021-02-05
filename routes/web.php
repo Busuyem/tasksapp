@@ -17,4 +17,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+//Route to return home/dashboard page
 Route::get('/home', 'HomeController@index')->name('home');
+
+//route to manage create, edit, list pages and delete and updating functionalities
+Route::resource('task', 'TaskController')->middleware('auth');
